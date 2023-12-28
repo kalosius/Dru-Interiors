@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'druinteriors',
-    'crispy_bootstrap5',
-    'crispy_forms'
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +140,13 @@ LOGIN_REDIRECT_URL = 'index'
 # Setting where users login from
 
 LOGIN_URL = 'login'
+
+# logging in with facebook
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

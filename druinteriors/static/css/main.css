@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.nav-bar{
+    display: inline-block;  
+}
+
+.nav-item{
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    list-style: none;
+   
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+

@@ -60,24 +60,25 @@
   <button type="submit">Search</button>
   </div>
 
-
   <!-- carousel Images-->
   <h3>Furniture</h3>
-  <div id="carouselExample"  class="carousel slide" data-ride="carousel">
+  <div id="carouselExample"  class="carousel slide" data-ride="carousel"> 
+    {% for item in furniture %}
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image1" >
+        <img src="{{ item.furn_image.url}}" class="d-block w-100" alt="image1" >
       </div>
       <div class="carousel-item ">
-        <img src="" class="d-block w-100" alt="image2" >
+        <img src="{{ item.furn_image.url }}" class="d-block w-100" alt="image2" >
       </div>
       <div class="carousel-item active">
         <img src="" class="d-block w-100" alt="image3" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image4" >
+        <img src="{{ item.furn_image.url}}" class="d-block w-100" alt="image4" >
       </div>
     </div>
+    {% endfor %}
     <!-- controls -->
     <a href="#carouselExample" class="carousel-control-prev" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,20 +94,22 @@
   <!-- carousel Images-->
   <h3>Phones & Accessories</h3>
   <div id="carouselExample"  class="carousel slide" data-ride="carousel">
+    {% for item in phones %}
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image1" >
+        <img src="{{ item.phone_image.url }}" class="d-block w-100" alt="image1" >
       </div>
       <div class="carousel-item ">
-        <img src="" class="d-block w-100" alt="image2" >
+        <img src="{{ item.phone_image.url }}" class="d-block w-100" alt="image2" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image3" >
+        <img src="{{ item.phone_image.url}}" class="d-block w-100" alt="image3" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image4" >
+        <img src="{{ item.phone_image.url }}" class="d-block w-100" alt="image4" >
       </div>
     </div>
+    {% endfor %}
     <!-- controls -->
     <a href="#carouselExample" class="carousel-control-prev" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,22 +123,24 @@
   <!-- End of carousel -->
 
   <!-- carousel Images-->
-  <h3>Fashion</h3>
+  <h3>Sneakers</h3>
   <div id="carouselExample"  class="carousel slide" data-ride="carousel">
+    {% for item in sneaker %}
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image1" >
+        <img src="{{ item.sneaker_image.url }}" class="d-block w-100" alt="image1" >
       </div>
       <div class="carousel-item ">
-        <img src="" class="d-block w-100" alt="image2" >
+        <img src="{{ item.sneaker_image.url}}" class="d-block w-100" alt="image2" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image3" >
+        <img src="{{ item.sneaker_image.url}}" class="d-block w-100" alt="image3" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image4" >
+        <img src="{{ item.sneaker_image.url}}" class="d-block w-100" alt="image4" >
       </div>
     </div>
+    {% endfor %}
     <!-- controls -->
     <a href="#carouselExample" class="carousel-control-prev" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -151,20 +156,22 @@
   <!-- carousel Images-->
   <h3>Gadgets</h3>
   <div id="carouselExample"  class="carousel slide" data-ride="carousel">
+    {% for item in gadgets %}
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image1" >
+        <img src="{{ item.gadget_image.url}}" class="d-block w-100" alt="image1" >
       </div>
       <div class="carousel-item ">
-        <img src="" class="d-block w-100" alt="image2" >
+        <img src="{{ item.gadget_image.url}}" class="d-block w-100" alt="image2" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image3" >
+        <img src="{{ item.gadget_image.url}}" class="d-block w-100" alt="image3" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image4" >
+        <img src="{{ item.gadget_image.url}}" class="d-block w-100" alt="image4" >
       </div>
     </div>
+    {% endfor %}
     <!-- controls -->
     <a href="#carouselExample" class="carousel-control-prev" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -180,21 +187,23 @@
   <!-- carousel Images-->
   <h3>Pets</h3>
   <div id="carouselExample"  class="carousel slide" data-ride="carousel">
+    {% for item in pet %}
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image1" >
+        <img src="{{ item.pet_image.url}}" class="d-block w-100" alt="image1" >
       </div>
       <div class="carousel-item ">
-        <img src="" class="d-block w-100" alt="image2" >
+        <img src="{{ item.pet_image.url}}" class="d-block w-100" alt="image2" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image3" >
+        <img src="{{ item.pet_image.url}}" class="d-block w-100" alt="image3" >
       </div>
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="image4" >
+        <img src="{{ item.pet_image.url}}" class="d-block w-100" alt="image4" >
       </div>
     </div>
   </div>
+  {% endfor %}
   <!-- controls -->
   <a href="#carouselExample" class="carousel-control-prev" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -204,6 +213,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+
   <!-- End of carousel -->
   <footer>
     <div>
@@ -224,14 +234,7 @@
 
 
   <!-- Script element to scroll the page on click -->
-  <script>
-    document.getElementById('backToTop').addEventListener('click', function(){
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-  </script>
+  
 </body>
 
 
