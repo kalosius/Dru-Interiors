@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load crispy_forms_tags %}
 {% load static %}
 
 {% block content %}
@@ -12,9 +11,9 @@
     <div class="container container-fluid">
         <form id = "form" method="POST"> 
             {% csrf_token %}  
-            {{form | crispy}}
+            {{ form.as_p }}
             <br> <br> 
-            <input type="submit" name = "Submit" class="btn btn-info btn-danger btn-block" type="button">
+            <button type="submit">Register</button>
             <br>                
       </form>      
     </div>
